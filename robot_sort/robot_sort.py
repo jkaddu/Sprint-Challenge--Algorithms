@@ -102,7 +102,7 @@ class SortingRobot:
             self.set_light_off()
             
             while self.can_move_right():
-                #pick item up at current position and move right
+                #pick item up at current position and moves right
                 self.swap_item()
                 self.move_right()
                 #if item smaller than held item, swap them
@@ -121,6 +121,7 @@ class SortingRobot:
             self.set_light_off()
 
             self.move_left()
+            
             while self.can_move_left():
                 self.swap_item()
                 self.move_left()
